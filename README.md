@@ -78,3 +78,18 @@ it can also refer to:
 #### Cons
 * ?
 #### Use cases
+
+
+
+## Builder
+
+Useful when you want to create different representations of some product or when building complex objects and you want to separate the implementation from the client.
+
+It's composed of
+* Entity interface + concrete class
+* Builder interface + builder concrete class
+* Director - optional
+
+The director can further hide the implementation by exposing fewer simpler methods within which the build process steps are called.
+exp. `makeSportCar()` can be a method that inside calls multiple methods from the builder.
+
