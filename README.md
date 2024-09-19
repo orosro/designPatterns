@@ -52,3 +52,29 @@ The Singleton Design Pattern in JavaScript is a design pattern that restricts th
 * https://www.sitepoint.com/javascript-design-patterns-singleton/
 * https://refactoring.guru/design-patterns/singleton
 * https://www.patterns.dev/vanilla/singleton-pattern
+
+
+## Factory
+
+A "factory" can be a simple function that allows us to create new objects without using the `new` keyword.
+it can also refer to:
+* a function or method that creates a program’s GUI;
+* a class that creates users;
+* static method that calls a class constructor in a certain way;
+* one of the creational design patterns.
+
+##### Terms
+- factory = simple function that returns new objects
+- creation method = a method that creates objects
+- static creation method = a static method that creates objects
+- **simple factory pattern** = a function that creates different objects based on conditions
+
+
+
+
+
+#### Pros
+* Useful when you want to create multiple smaller objects
+#### Cons
+* ?
+#### Use cases
