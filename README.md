@@ -93,3 +93,33 @@ It's composed of
 The director can further hide the implementation by exposing fewer simpler methods within which the build process steps are called.
 exp. `makeSportCar()` can be a method that inside calls multiple methods from the builder.
 
+
+
+## Prototype
+
+Not related to the prototype of objects, but it's actually a mechanism that allows cloning entities by using a method exposed on them, without knowing about their classes.
+
+```js
+const obj = new SomeEntity();
+obj.applySomeProps();
+const objClone = obj.clone();
+obj === objClone;
+
+```
+
+#### Use cases
+
+
+
+
+# Structural patterns
+
+## Adapter
+
+The adapter pattern is usually used to integrate 2 interfaces that are incompatible. It's mainly composed from a wrapper over the adaptee (target entity that we want to adapt).
+Example, if we have a 3rd party library over which we do not have control, we can write an adapter between it and the consumer.
+
+```js
+3rdPartyLib <- LibAdapter -> client 
+```
+
